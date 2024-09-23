@@ -1,0 +1,1 @@
+Frequently using Mevo bikes, I noticed that at certain stations, there are often no bikes available at specific times. This open-source project aims to create a web application for predicting the number of bikes available at a time requested by the user. This will help to plan bike trips more carefully and reliably.
