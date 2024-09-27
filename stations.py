@@ -42,7 +42,9 @@ class Stations:
                     station_id=station_id,
                     ebikes_count=ebikes_count,
                     bikes_count=bikes_count,
-                    time=datetime.datetime.fromtimestamp(self._last_updated),
+                    time=datetime.datetime.fromtimestamp(
+                        self._last_updated, datetime.timezone.utc
+                    ),
                 )
             )
 
