@@ -5,7 +5,7 @@ from station_saver import StationSaver
 import schedule
 import logging
 from functools import lru_cache
-
+import time
 
 logging.basicConfig(
     level=logging.INFO,
@@ -38,3 +38,4 @@ if __name__ == "__main__":
 
     while True:
         schedule.run_pending()
+        time.sleep(get_settings().saving_interval // 2)
